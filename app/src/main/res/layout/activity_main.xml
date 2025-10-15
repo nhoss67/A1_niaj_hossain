@@ -13,7 +13,6 @@
         android:fitsSystemWindows="true"
         android:padding="1dp">
 
-        <!-- 🕐 Hours Worked -->
         <EditText
             android:id="@+id/editHours"
             android:layout_width="0dp"
@@ -25,7 +24,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- 💵 Hourly Rate -->
         <EditText
             android:id="@+id/editRate"
             android:layout_width="0dp"
@@ -37,7 +35,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editHours" />
 
-        <!-- 🔘 Calculate Button -->
         <Button
             android:id="@+id/btnCalculate"
             android:layout_width="0dp"
@@ -48,7 +45,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editRate" />
 
-        <!-- 💬 Results Section -->
         <TextView
             android:id="@+id/txtPay"
             android:layout_width="0dp"
