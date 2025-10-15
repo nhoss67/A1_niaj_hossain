@@ -7,4 +7,88 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="20dp">
+
+        <!-- 🕐 Hours Worked -->
+        <EditText
+            android:id="@+id/editHours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Number of hours worked"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- 💵 Hourly Rate -->
+        <EditText
+            android:id="@+id/editRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Hourly rate"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editHours" />
+
+        <!-- 🔘 Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Calculate Pay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editRate" />
+
+        <!-- 💬 Results Section -->
+        <TextView
+            android:id="@+id/txtPay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Pay:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCalculate" />
+
+        <TextView
+            android:id="@+id/txtOvertime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Overtime Pay:"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPay" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total Pay:"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtOvertime" />
+
+        <TextView
+            android:id="@+id/txtTax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tax:"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTotal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
