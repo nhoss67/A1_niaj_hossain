@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:orientation="vertical"
+        android:background="#E0E0E0"
         android:padding="12dp">
 
         <ListView
