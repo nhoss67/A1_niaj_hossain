@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:text="© 2025 Niaj Hossain"
             android:gravity="center"
-            android:textSize="12sp"
+            android:textSize="10sp"
             android:textColor="@android:color/darker_gray"
             android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
